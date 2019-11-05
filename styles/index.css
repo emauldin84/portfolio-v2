@@ -38,6 +38,9 @@ a:-webkit-any-link {
 .nav-item {
   margin: 1vmin 2vmin;
 }
+.nav-item:hover {
+  color: #7795f8;
+}
 
 .projects-link{
   font-weight: 600;
@@ -59,7 +62,14 @@ a:-webkit-any-link {
   margin: 18vh 0;
 }
 
-/* Terminal Header and Buttons */
+.about-container {
+  display:flex;
+  justify-content: center;
+}
+
+.terminal {
+  width: 75%;
+}
 .terminal-header {
   height: 28px;
   background-color: #e4e3e5;
@@ -145,8 +155,9 @@ a:-webkit-any-link {
   50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }
+
 .project-container{
-  width: 80%;
+
 }
 .project-title-container {
   width: 30%;
@@ -156,9 +167,14 @@ a:-webkit-any-link {
 #project-title {
   margin: 15vh 0 5px 0;
 }
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .project-card {
-  width: 90vw;
+  width: 75%;
   position: relative;
   display: flex;
   flex-direction: row;
