@@ -156,9 +156,9 @@ a:-webkit-any-link {
   100% { opacity: 1.0; }
 }
 
-.project-container{
+/* .project-container{
 
-}
+} */
 .project-title-container {
   width: 30%;
   border-bottom: 8px solid rgb(116, 127, 224);
