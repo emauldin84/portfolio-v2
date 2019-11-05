@@ -86,5 +86,32 @@ a:-webkit-any-link {
   border: 1px solid #2dbb41;
 }
 
+.terminal-window{
+  background-color:#5a5d7a;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+}
+.statement{
+  margin: 0 35px 15px;
+  padding: 25px 0 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: calc(8px + 1.5vmin);
+}
+
+.input-statement {
+  color:#f7f7f7;
+}
+.return-statement {
+  color: #e7d184;
+}
+
+.about-container .terminal .terminal-window a {
+  color: #35feff;
+}
+.about-container .terminal .terminal-window a:hover {
+  color: rgba(53, 254, 255, .8);
+  
+}
+
 
 
