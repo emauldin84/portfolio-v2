@@ -178,7 +178,7 @@ a:-webkit-any-link {
 } */
 .project-title-container, .contact-title-container {
   width: 30%;
-  border-bottom: 8px solid rgb(116, 127, 224);
+  border-bottom: 6px solid rgb(116, 127, 224);
   margin-bottom: 50px;
 }
 #project-title, #contact-title {
