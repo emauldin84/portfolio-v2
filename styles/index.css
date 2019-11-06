@@ -40,11 +40,17 @@ a:-webkit-any-link {
 }
 .nav-item:hover {
   color: #7795f8;
-  border-bottom: 2px solid rgb(116, 127, 224);
+  /* border-bottom: 2px solid rgb(116, 127, 224); */
+  transition: all 0.5s ease;  
 }
 
 .projects-link{
   font-weight: 600;
+  color: #747fe0;
+}
+
+.projects-link:hover {
+  border-bottom: 2px solid rgb(116, 127, 224);
 }
 
 .top {
@@ -177,7 +183,7 @@ a:-webkit-any-link {
 
 } */
 .project-title-container, .contact-title-container {
-  width: 30%;
+  width: 15em;
   border-bottom: 6px solid rgb(116, 127, 224);
   margin-bottom: 50px;
 }
@@ -243,7 +249,7 @@ a:-webkit-any-link {
   letter-spacing: .025em;
   text-decoration: none;
   transition: all .15s ease;
-  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  font-family: 'Camphor', 'Open Sans', 'Segoe UI', sans-serif;
   font-size: calc(4px + 1.25vmin);
   font-weight: 400;
   box-sizing: border-box;
@@ -277,8 +283,8 @@ a.contact-items{
 }
 a.contact-items:hover {
   color: #7795f8;
-  border-bottom: 2px solid rgb(116, 127, 224);
-  
+  /* border-bottom: 2px solid rgb(116, 127, 224); */
+  transition: all 0.5s ease;  
 }
 
 
