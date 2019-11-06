@@ -40,6 +40,7 @@ a:-webkit-any-link {
 }
 .nav-item:hover {
   color: #7795f8;
+  border-bottom: 2px solid rgb(116, 127, 224);
 }
 
 .projects-link{
@@ -51,7 +52,7 @@ a:-webkit-any-link {
   margin: 5px;
   /* set size */
   padding: calc(5px + 1vh);
-  box-shadow: 4px -4px 0 0 #747fe0
+  box-shadow: inset 4px -4px 0 0 #747fe0
 }
 .topButton-container {
   position: fixed;
@@ -59,7 +60,7 @@ a:-webkit-any-link {
   bottom: calc(5px + 2vh);
 }
 .top-arrow-up {
-  transform: rotate(-45deg);
+  transform: rotate(135deg);
 }
 
 
@@ -154,7 +155,7 @@ a:-webkit-any-link {
   animation: blink 1s step-end infinite;
 }
 .terminal-cursor {
-  height: calc(8px + 1.2vmin);
+  height: calc(10px + 1.2vmin);
   width: calc(2px + 1.2vmin);
   background-color:rgba(247, 247, 247, .75);
 
@@ -175,12 +176,12 @@ a:-webkit-any-link {
 /* .project-container{
 
 } */
-.project-title-container {
+.project-title-container, .contact-title-container {
   width: 30%;
   border-bottom: 8px solid rgb(116, 127, 224);
   margin-bottom: 50px;
 }
-#project-title {
+#project-title, #contact-title {
   margin: 15vh 0 5px 0;
 }
 .cards-container {
@@ -264,5 +265,20 @@ a:-webkit-any-link {
   background: #fff;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+a.contact-items{
+  margin: 0 20px;
+}
+a.contact-items:hover {
+  color: #7795f8;
+  border-bottom: 2px solid rgb(116, 127, 224);
+  
+}
 
 
