@@ -44,8 +44,24 @@ a:-webkit-any-link {
 
 .projects-link{
   font-weight: 600;
-  color: #747fe0;
 }
+
+.top {
+  display: inline-block;
+  margin: 5px;
+  /* set size */
+  padding: calc(5px + 1vh);
+  box-shadow: 4px -4px 0 0 #747fe0
+}
+.topButton-container {
+  position: fixed;
+  right: calc(5px + 2vw);
+  bottom: calc(5px + 2vh);
+}
+.top-arrow-up {
+  transform: rotate(-45deg);
+}
+
 
 .title-container {
   max-width: 90%;
