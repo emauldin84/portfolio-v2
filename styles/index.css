@@ -69,6 +69,10 @@ a:-webkit-any-link {
   transform: rotate(135deg);
 }
 
+.hide {
+  display: none;
+}
+
 
 .title-container {
   max-width: 90%;
