@@ -64,13 +64,14 @@ a:-webkit-any-link {
   position: fixed;
   right: calc(5px + 2vw);
   bottom: calc(5px + 2vh);
+  transition: transform .5s;
 }
 .top-arrow-up {
   transform: rotate(135deg);
 }
 
 .hide {
-  display: none;
+  transform: translateY(200px);
 }
 
 
