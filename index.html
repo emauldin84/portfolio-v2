@@ -38,7 +38,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link id='styles' rel="stylesheet" href="./styles/index.css">
     
 </head>
 <body>
@@ -47,6 +47,7 @@
             <a href='#about' class='nav-item'>About</a>
             <a href='#project-title' class='nav-item'>Projects</a>
             <a href='#contact-title' class='nav-item'>Contact</a>
+            <div id='change-mode'>🌑</div>
             <div id='toTop' class='topButton-container hide'>
                 <a href='#top'  class='top top-arrow-up'></a>
             </div>
@@ -278,6 +279,16 @@
                 document.getElementById("toTop").className = "topButton-container hide";
             }
 
+        })
+    </script>
+    <script>
+        let showDarkMode = false
+        let styleLink = document.getElementById('styles')
+        let changeMode = document.getElementById('change-mode')
+        document.getElementById("change-mode").addEventListener('click', () => {
+            showDarkMode = !showDarkMode
+            showDarkMode ? styleLink.setAttribute('href', './styles/goDark.css') : styleLink.setAttribute('href', './styles/index.css')
+            showDarkMode ? changeMode.innerHTML = '🌕' : changeMode.innerHTML = '🌑'
         })
     </script>
 </body>

@@ -34,6 +34,7 @@ a:-webkit-any-link {
 .navbar{
   float: right;
   padding-top: 18px;
+  margin-right: 20px;
 }
 .nav-item {
   margin: 1vmin 2vmin;
@@ -72,6 +73,16 @@ a:-webkit-any-link {
 
 .hide {
   transform: translateY(200px);
+}
+
+#change-mode{
+  position: fixed;
+  right: calc(5px + 1.3vw);
+  top: calc(5px + 2vh);
+}
+
+#change-mode:hover{
+  cursor: pointer;
 }
 
 
@@ -152,7 +163,6 @@ a:-webkit-any-link {
 }
 .about-container .terminal .terminal-window a:hover {
   color: rgba(53, 254, 255, .8);
-  
 }
 
 .cursor {
