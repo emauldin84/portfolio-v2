@@ -235,6 +235,9 @@
                         
                     </div>
             </div>
+            <div class='copyright-container'>
+                <p id='copyright'></p>
+            </div>
 
         </div>
 
@@ -290,6 +293,10 @@
             showDarkMode ? changeMode.innerHTML = '🌕' : changeMode.innerHTML = '🌑'
         })
     </script>
+    <script>
+        const copyright = `Built by me © ${new Date().getFullYear()}`;
+        document.getElementById('copyright').innerHTML = copyright;
+        </script>
 </body>
 </html>
 

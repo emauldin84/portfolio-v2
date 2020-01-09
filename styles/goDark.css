@@ -285,7 +285,7 @@ a:-webkit-any-link {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 }
 
 a.contact-items{
@@ -297,4 +297,14 @@ a.contact-items:hover {
     transition: all 0.5s ease;  
 }
 
+.copyright-container{
+    display: flex;
+    justify-content: center;
+    padding-top: calc(8px + 1vmin);
+    padding-bottom: calc(4px + 1vmin);
+}
 
+#copyright {
+    margin-top: 0;
+    font-size: calc(8px + 1vmin);
+}
