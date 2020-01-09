@@ -159,9 +159,7 @@ a:-webkit-any-link {
     color: rgb(196, 77, 199);
 }
 .about-container .terminal .terminal-window a:hover {
-    /* color: rgba(196, 77, 199, 1); */
     filter: brightness(150%)
-
 }
 
 .cursor {
