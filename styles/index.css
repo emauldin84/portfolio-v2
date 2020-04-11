@@ -77,10 +77,13 @@ a:-webkit-any-link {
 #change-mode{
   position: fixed;
   right: calc(5px + 1.3vw);
-  top: calc(5px + 2vh);
+  filter: brightness(130%);
+  font-size: calc(12px + 2vmin);
+
 }
 #change-mode:hover{
   cursor: pointer;
+  filter: brightness(85%);
 }
 
 .title-container {

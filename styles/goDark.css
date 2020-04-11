@@ -77,10 +77,14 @@ a:-webkit-any-link {
 #change-mode{
     position: fixed;
     right: calc(5px + 1.3vw);
-    top: calc(5px + 2vh);
+    filter: brightness(90%);
+    font-size: calc(12px + 2vmin);
+
 }
 #change-mode:hover{
     cursor: pointer;
+    filter: brightness(110%);
+
 }
 
 .title-container {
@@ -252,7 +256,7 @@ a:-webkit-any-link {
     display: inline-block;
     line-height: 40px;
     padding: 0 14px;
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
     border-radius: 4px;
     letter-spacing: .025em;
     text-decoration: none;
@@ -267,7 +271,7 @@ a:-webkit-any-link {
 .project-link:hover {
     background: rgb(119, 252, 119);
     transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 1);
 }
 
 .project-github-link{
