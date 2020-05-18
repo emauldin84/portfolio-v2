@@ -310,3 +310,7 @@ a.contact-items:hover {
     margin-top: 0;
     font-size: calc(8px + 1vmin);
 }
+
+#loadOverlay {
+    display: none;
+}
