@@ -146,6 +146,20 @@
                                 <a href='https://newstory-metrics.ericmauldin.info/' target='_blank' class='project-link'>Live Demo</a>
                                 <a href='https://github.com/emauldin84/newstory-metrics-dashboard' target='_blank' class='project-link project-github-link'>View Source</a>
                             </div>
+                            <div class="img-row">
+                              <div class="img-column">
+                                <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                              </div>
+                              <div class="img-column">
+                                <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                              </div>
+                              <div class="img-column">
+                                <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                              </div>
+                              <div class="img-column">
+                                <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                              </div>
+                            </div>
                         </div>
                     </div>
                     <!-- New Story User Metrics -->
@@ -270,72 +284,68 @@
         </div>
     </div>
 
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="img1_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="img2_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="img3_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="img4_wide.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+        </div>
+      </div>
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/smoothScrolling.js"></script>
     <script src="scripts/toggleMode.js"></script>
-    <!-- <script>
-    $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-        // Prevent default anchor click behavior
-            event.preventDefault();
-
-        // Store hash
-            let hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-            scrollTop: $(hash).offset().top
-            }, 600, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-            });
-            } // End if
-        });
-    });
-    </script> -->
-    <!-- <script>
-        document.addEventListener('scroll', () => {
-            if (window.scrollY > 0) {
-                document.getElementById("toTop").className = "topButton-container";
-            }
-            if (window.scrollY == 0) {
-                document.getElementById("toTop").className = "topButton-container hide";
-            }
-
-        })
-    </script> -->
-    <!-- <script>
-        let showDarkMode
-        let styleLink = document.getElementById('styles')
-        let changeMode = document.getElementById('change-mode')
-        if (!localStorage.getItem('dark-mode')){
-            console.log('there is not a dark-mode in local storage')
-            showDarkMode = false
-            localStorage.setItem('dark-mode', showDarkMode.toString())
-        } else {
-            showDarkMode = JSON.parse(localStorage.getItem('dark-mode'))
-            console.log(showDarkMode, localStorage.getItem('dark-mode'))
-            showDarkMode ? styleLink.setAttribute('href', './styles/goDark.css') : styleLink.setAttribute('href', './styles/index.css')
-            showDarkMode ? changeMode.innerHTML = '🌕' : changeMode.innerHTML = '🌑'
-        }
-        document.getElementById("change-mode").addEventListener('click', () => {
-            showDarkMode = !showDarkMode
-            localStorage.setItem('dark-mode', JSON.stringify(showDarkMode))
-            showDarkMode ? styleLink.setAttribute('href', './styles/goDark.css') : styleLink.setAttribute('href', './styles/index.css')
-            showDarkMode ? changeMode.innerHTML = '🌕' : changeMode.innerHTML = '🌑'
-        })
-    </script> -->
+    <script src="scripts/lightbox.js"></script>
     <script>
-        const copyright = `Built by Eric © ${new Date().getFullYear()}`;
-        document.getElementById('copyright').innerHTML = copyright;
-        </script>
+      const copyright = `Built by Eric © ${new Date().getFullYear()}`;
+      document.getElementById('copyright').innerHTML = copyright;
+    </script>
 </body>
 </html>
 
