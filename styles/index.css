@@ -42,7 +42,7 @@ a:-webkit-any-link {
 .nav-item:hover {
   color: #7795f8;
   /* border-bottom: 2px solid rgb(116, 127, 224); */
-  transition: all 0.5s ease;  
+  transition: all 0.5s ease;
 }
 
 .projects-link{
@@ -273,12 +273,12 @@ a:-webkit-any-link {
   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
-.project-github-link{
+.project-github-link, .app-store-link{
   background: #fff;
     color: #747fe0;
 }
 
-.project-github-link:hover{
+.project-github-link:hover, .app-store-link:hover{
   background: #fff;
 }
 
@@ -295,7 +295,7 @@ a.contact-items{
 a.contact-items:hover {
   color: #7795f8;
   /* border-bottom: 2px solid rgb(116, 127, 224); */
-  transition: all 0.5s ease;  
+  transition: all 0.5s ease;
 }
 
 .copyright-container{
@@ -312,4 +312,17 @@ a.contact-items:hover {
 
 #loadOverlay {
   display: none;
+}
+
+.android-icon {
+  content: url("../images/android-icon.png");
+  width: 20px;
+}
+.apple-icon {
+  content: url("../images/apple-icon.png");
+  width: 20px;
+}
+.app-store-link {
+  display: flex;
+  align-items: center;
 }

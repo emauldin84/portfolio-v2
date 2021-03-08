@@ -42,7 +42,7 @@ a:-webkit-any-link {
 .nav-item:hover {
     color: rgb(119, 252, 119);
     /* border-bottom: 2px solid rgb(119, 252, 119); */
-    transition: all 0.5s ease;  
+    transition: all 0.5s ease;
 }
 
 .projects-link{
@@ -296,7 +296,7 @@ a.contact-items{
 a.contact-items:hover {
     color: rgb(119, 252, 119);
     /* border-bottom: 2px solid rgb(119, 252, 119); */
-    transition: all 0.5s ease;  
+    transition: all 0.5s ease;
 }
 
 .copyright-container{
@@ -313,4 +313,17 @@ a.contact-items:hover {
 
 #loadOverlay {
     display: none;
+}
+
+.android-icon {
+  content: url("../images/android-icon-dark.png");
+  width: 20px;
+}
+.apple-icon {
+  content: url("../images/apple-icon-dark.png");
+  width: 20px;
+}
+.app-store-link {
+  display: flex;
+  align-items: center;
 }
