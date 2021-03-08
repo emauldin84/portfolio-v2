@@ -24,3 +24,12 @@ $(document).ready(function(){
     });
 });
 
+document.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+      document.getElementById("toTop").className = "topButton-container";
+  }
+  if (window.scrollY == 0) {
+      document.getElementById("toTop").className = "topButton-container hide";
+  }
+
+})
