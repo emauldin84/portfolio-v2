@@ -8,7 +8,9 @@ html {
 
 html, body {
     text-align: center;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    max-width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,6 +68,7 @@ a:-webkit-any-link {
     right: calc(5px + 2vw);
     bottom: calc(5px + 2vh);
     transition: transform .5s;
+    z-index: 1;
 }
 .top-arrow-up {
     transform: rotate(135deg);
@@ -75,11 +78,11 @@ a:-webkit-any-link {
     transform: translateY(200px);
 }
 #change-mode{
-    position: fixed;
-    right: calc(5px + 1.3vw);
-    filter: brightness(90%);
-    font-size: calc(12px + 2vmin);
-
+  position: fixed;
+  right: calc(5px + 1.3vw);
+  filter: brightness(90%);
+  font-size: calc(12px + 2vmin);
+  z-index: 1;
 }
 #change-mode:hover{
     cursor: pointer;
@@ -106,6 +109,7 @@ a:-webkit-any-link {
     display:flex;
     justify-content: center;
 }
+
 
 .terminal {
     width: 75%;
@@ -221,7 +225,9 @@ a:-webkit-any-link {
     overflow: hidden;
     padding: 35px;
 }
-
+.project-content{
+  width: 100%;
+}
 .content {
     font-size: calc(8px + 1.2vmin);
     margin-bottom: 20px;
@@ -333,7 +339,11 @@ a.contact-items:hover {
 .img-row > .img-column {
   padding: 0 8px;
 }
-
+.img-row {
+  margin-top: 20px;
+  display: flex;
+  overflow: auto;
+}
 .img-row:after {
   content: "";
   display: table;
@@ -342,8 +352,8 @@ a.contact-items:hover {
 
 /* Create four equal columns that floats next to eachother */
 .img-column {
-  float: left;
-  width: 25%;
+  max-width: 25%;
+  min-width: 100px;
 }
 
 /* The Modal (background) */
@@ -408,9 +418,15 @@ a.contact-items:hover {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  background-color: rgba(0,0,0,.2);
 }
 
-/* Position the "next button" to the right */
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+
+  /* Position the "next button" to the right */
+}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -441,6 +457,7 @@ a.contact-items:hover {
 
 img.demo {
   opacity: 0.6;
+  width: 100%;
 }
 
 .active,
@@ -450,8 +467,17 @@ img.demo {
 
 img.hover-shadow {
   transition: 0.3s;
+  width: 100%;
 }
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .terminal, .project-card {
+    width:100%
+  }
 }
